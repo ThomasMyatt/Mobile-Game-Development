@@ -1,9 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class kill_obj : MonoBehaviour
 {
+    public int Respawn;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,11 +18,11 @@ public class kill_obj : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D other)
+   void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
+            SceneManager.LoadScene(Respawn);
         }
     }
 }
