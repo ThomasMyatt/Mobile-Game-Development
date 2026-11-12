@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
+    //allows me to assign the limit between left and right side of the screen so the platform runs off screen
     public GameObject leftlimit;
     public GameObject rightlimit;
     public float moveSpeed = 1.0f;
