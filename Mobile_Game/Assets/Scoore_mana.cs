@@ -18,7 +18,7 @@ public class Scoore_mana : MonoBehaviour
     // when the game starts it will be 0 points 
     void Start()
     {
-        ScoreText.text = score.ToString() + " POINTS";
+        ScoreText.text = score.ToString() + " score";
 
     }
 
@@ -27,7 +27,7 @@ public class Scoore_mana : MonoBehaviour
     public void AddPoint()
     {
         score += 1;
-        ScoreText.text = score.ToString() + " POINTS";
+        ScoreText.text = score.ToString() + " score";
     }
 
     // Update is called once per frame
