@@ -19,8 +19,9 @@ public class New_input : MonoBehaviour
     void Update()
     {
         Vector2 move = moveAction.action.ReadValue<Vector2>();
-        rb.linearVelocity = new Vector2(move.x * 5, move.y * 5);
+        rb.linearVelocity = new Vector2(move.x * 5, rb.linearVelocityY);
 
         
+
     }
 }
